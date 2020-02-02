@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100vh;
+}
+
+.card {
+    animation: ease-in-out aparecer 2s;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
